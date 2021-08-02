@@ -1,0 +1,220 @@
+2021-07-26 14:43:23 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2021-07-26 14:43:23 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2021-07-26 14:43:23 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to default profiles: default
+2021-07-26 14:43:24 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=64ad351d-d90b-347b-9d37-35fccc79a4a3
+2021-07-26 14:43:24 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2021-07-26 14:43:24 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2021-07-26 14:43:24 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-07-26 14:43:24 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-07-26 14:43:24 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-07-26 14:43:24 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1266 ms
+2021-07-26 14:43:27 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/actuator/**'] with []
+2021-07-26 14:43:27 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/encrypt/**'] with []
+2021-07-26 14:43:27 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/decrypt/**'] with []
+2021-07-26 14:43:27 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7bb25046, org.springframework.security.web.context.SecurityContextPersistenceFilter@fee7ca, org.springframework.security.web.header.HeaderWriterFilter@1e23ee0e, org.springframework.security.web.csrf.CsrfFilter@13d10057, org.springframework.security.web.authentication.logout.LogoutFilter@10408ea, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@13137835, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@49d979c4, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@69b1e8f8, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2904bc56, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@14ad42, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6c2dd88b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@126af200, org.springframework.security.web.session.SessionManagementFilter@38923cfe, org.springframework.security.web.access.ExceptionTranslationFilter@75f8d9b0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@49f50c8f]
+2021-07-26 14:43:27 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-07-26 14:43:27 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2021-07-26 14:43:27 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2021-07-26 14:43:27 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 5.22 seconds (JVM running for 6.08)
+2021-07-26 14:43:27 [main] INFO  o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-07-26 14:43:27 [main] INFO  o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-07-26 15:01:52 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2021-07-26 15:01:53 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2021-07-26 15:01:53 [main] WARN  o.s.c.b.e.EnvironmentDecryptApplicationInitializer - Cannot decrypt: key=spring.security.user.password
+2021-07-26 15:01:53 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Cannot decrypt: key=spring.security.user.password
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:159)
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.lambda$decrypt$0(AbstractEnvironmentDecrypt.java:137)
+	at java.base/java.util.LinkedHashMap.replaceAll(Unknown Source)
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:132)
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:70)
+	at org.springframework.cloud.bootstrap.encrypt.EnvironmentDecryptApplicationInitializer.initialize(EnvironmentDecryptApplicationInitializer.java:95)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener$DelegatingEnvironmentDecryptApplicationInitializer.initialize(BootstrapApplicationListener.java:411)
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:638)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:402)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:336)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1336)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1325)
+	at com.microservices.demo.config.server.ConfigServer.main(ConfigServer.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+Caused by: java.lang.IllegalStateException: Unable to invoke Cipher due to bad padding
+	at org.springframework.security.crypto.encrypt.CipherUtils.doFinal(CipherUtils.java:141)
+	at org.springframework.security.crypto.encrypt.AesBytesEncryptor.decrypt(AesBytesEncryptor.java:134)
+	at org.springframework.security.crypto.encrypt.HexEncodingTextEncryptor.decrypt(HexEncodingTextEncryptor.java:44)
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:144)
+	... 20 common frames omitted
+Caused by: javax.crypto.BadPaddingException: Given final block not properly padded. Such issues can arise if a bad key is used during decryption.
+	at java.base/com.sun.crypto.provider.CipherCore.unpad(Unknown Source)
+	at java.base/com.sun.crypto.provider.CipherCore.fillOutputBuffer(Unknown Source)
+	at java.base/com.sun.crypto.provider.CipherCore.doFinal(Unknown Source)
+	at java.base/com.sun.crypto.provider.AESCipher.engineDoFinal(Unknown Source)
+	at java.base/javax.crypto.Cipher.doFinal(Unknown Source)
+	at org.springframework.security.crypto.encrypt.CipherUtils.doFinal(CipherUtils.java:135)
+	... 23 common frames omitted
+2021-07-26 15:10:07 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2021-07-26 15:10:07 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2021-07-26 15:10:07 [main] WARN  o.s.c.b.e.EnvironmentDecryptApplicationInitializer - Cannot decrypt: key=spring.security.user.password
+2021-07-26 15:10:07 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Cannot decrypt: key=spring.security.user.password
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:159)
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.lambda$decrypt$0(AbstractEnvironmentDecrypt.java:137)
+	at java.base/java.util.LinkedHashMap.replaceAll(Unknown Source)
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:132)
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:70)
+	at org.springframework.cloud.bootstrap.encrypt.EnvironmentDecryptApplicationInitializer.initialize(EnvironmentDecryptApplicationInitializer.java:95)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener$DelegatingEnvironmentDecryptApplicationInitializer.initialize(BootstrapApplicationListener.java:411)
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:638)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:402)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:336)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1336)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1325)
+	at com.microservices.demo.config.server.ConfigServer.main(ConfigServer.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+Caused by: java.lang.IllegalStateException: Unable to invoke Cipher due to bad padding
+	at org.springframework.security.crypto.encrypt.CipherUtils.doFinal(CipherUtils.java:141)
+	at org.springframework.security.crypto.encrypt.AesBytesEncryptor.decrypt(AesBytesEncryptor.java:134)
+	at org.springframework.security.crypto.encrypt.HexEncodingTextEncryptor.decrypt(HexEncodingTextEncryptor.java:44)
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:144)
+	... 20 common frames omitted
+Caused by: javax.crypto.BadPaddingException: Given final block not properly padded. Such issues can arise if a bad key is used during decryption.
+	at java.base/com.sun.crypto.provider.CipherCore.unpad(Unknown Source)
+	at java.base/com.sun.crypto.provider.CipherCore.fillOutputBuffer(Unknown Source)
+	at java.base/com.sun.crypto.provider.CipherCore.doFinal(Unknown Source)
+	at java.base/com.sun.crypto.provider.AESCipher.engineDoFinal(Unknown Source)
+	at java.base/javax.crypto.Cipher.doFinal(Unknown Source)
+	at org.springframework.security.crypto.encrypt.CipherUtils.doFinal(CipherUtils.java:135)
+	... 23 common frames omitted
+2021-07-26 15:16:59 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2021-07-26 15:17:00 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2021-07-26 15:17:00 [main] WARN  o.s.c.b.e.EnvironmentDecryptApplicationInitializer - Cannot decrypt: key=spring.security.user.password
+2021-07-26 15:17:00 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Cannot decrypt: key=spring.security.user.password
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:159)
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.lambda$decrypt$0(AbstractEnvironmentDecrypt.java:137)
+	at java.base/java.util.LinkedHashMap.replaceAll(Unknown Source)
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:132)
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:70)
+	at org.springframework.cloud.bootstrap.encrypt.EnvironmentDecryptApplicationInitializer.initialize(EnvironmentDecryptApplicationInitializer.java:95)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener$DelegatingEnvironmentDecryptApplicationInitializer.initialize(BootstrapApplicationListener.java:411)
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:638)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:402)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:336)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1336)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1325)
+	at com.microservices.demo.config.server.ConfigServer.main(ConfigServer.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+Caused by: java.lang.IllegalStateException: Unable to invoke Cipher due to bad padding
+	at org.springframework.security.crypto.encrypt.CipherUtils.doFinal(CipherUtils.java:141)
+	at org.springframework.security.crypto.encrypt.AesBytesEncryptor.decrypt(AesBytesEncryptor.java:134)
+	at org.springframework.security.crypto.encrypt.HexEncodingTextEncryptor.decrypt(HexEncodingTextEncryptor.java:44)
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:144)
+	... 20 common frames omitted
+Caused by: javax.crypto.BadPaddingException: Given final block not properly padded. Such issues can arise if a bad key is used during decryption.
+	at java.base/com.sun.crypto.provider.CipherCore.unpad(Unknown Source)
+	at java.base/com.sun.crypto.provider.CipherCore.fillOutputBuffer(Unknown Source)
+	at java.base/com.sun.crypto.provider.CipherCore.doFinal(Unknown Source)
+	at java.base/com.sun.crypto.provider.AESCipher.engineDoFinal(Unknown Source)
+	at java.base/javax.crypto.Cipher.doFinal(Unknown Source)
+	at org.springframework.security.crypto.encrypt.CipherUtils.doFinal(CipherUtils.java:135)
+	... 23 common frames omitted
+2021-07-26 15:24:52 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2021-07-26 15:24:53 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2021-07-26 15:24:53 [main] WARN  o.s.c.b.e.EnvironmentDecryptApplicationInitializer - Cannot decrypt: key=spring.security.user.password
+2021-07-26 15:24:53 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Cannot decrypt: key=spring.security.user.password
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:159)
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.lambda$decrypt$0(AbstractEnvironmentDecrypt.java:137)
+	at java.base/java.util.LinkedHashMap.replaceAll(Unknown Source)
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:132)
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:70)
+	at org.springframework.cloud.bootstrap.encrypt.EnvironmentDecryptApplicationInitializer.initialize(EnvironmentDecryptApplicationInitializer.java:95)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener$DelegatingEnvironmentDecryptApplicationInitializer.initialize(BootstrapApplicationListener.java:411)
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:638)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:402)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:336)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1336)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1325)
+	at com.microservices.demo.config.server.ConfigServer.main(ConfigServer.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+Caused by: java.lang.IllegalStateException: Unable to invoke Cipher due to bad padding
+	at org.springframework.security.crypto.encrypt.CipherUtils.doFinal(CipherUtils.java:141)
+	at org.springframework.security.crypto.encrypt.AesBytesEncryptor.decrypt(AesBytesEncryptor.java:134)
+	at org.springframework.security.crypto.encrypt.HexEncodingTextEncryptor.decrypt(HexEncodingTextEncryptor.java:44)
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:144)
+	... 20 common frames omitted
+Caused by: javax.crypto.BadPaddingException: Given final block not properly padded. Such issues can arise if a bad key is used during decryption.
+	at java.base/com.sun.crypto.provider.CipherCore.unpad(Unknown Source)
+	at java.base/com.sun.crypto.provider.CipherCore.fillOutputBuffer(Unknown Source)
+	at java.base/com.sun.crypto.provider.CipherCore.doFinal(Unknown Source)
+	at java.base/com.sun.crypto.provider.AESCipher.engineDoFinal(Unknown Source)
+	at java.base/javax.crypto.Cipher.doFinal(Unknown Source)
+	at org.springframework.security.crypto.encrypt.CipherUtils.doFinal(CipherUtils.java:135)
+	... 23 common frames omitted
+2021-07-26 15:40:47 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2021-07-26 15:40:47 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2021-07-26 15:40:48 [main] WARN  o.s.c.b.e.EnvironmentDecryptApplicationInitializer - Cannot decrypt: key=spring.security.user.password
+2021-07-26 15:40:48 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Cannot decrypt: key=spring.security.user.password
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:159)
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.lambda$decrypt$0(AbstractEnvironmentDecrypt.java:137)
+	at java.base/java.util.LinkedHashMap.replaceAll(Unknown Source)
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:132)
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:70)
+	at org.springframework.cloud.bootstrap.encrypt.EnvironmentDecryptApplicationInitializer.initialize(EnvironmentDecryptApplicationInitializer.java:95)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener$DelegatingEnvironmentDecryptApplicationInitializer.initialize(BootstrapApplicationListener.java:411)
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:638)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:402)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:336)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1336)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1325)
+	at com.microservices.demo.config.server.ConfigServer.main(ConfigServer.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+Caused by: java.lang.IllegalStateException: Unable to invoke Cipher due to bad padding
+	at org.springframework.security.crypto.encrypt.CipherUtils.doFinal(CipherUtils.java:141)
+	at org.springframework.security.crypto.encrypt.AesBytesEncryptor.decrypt(AesBytesEncryptor.java:134)
+	at org.springframework.security.crypto.encrypt.HexEncodingTextEncryptor.decrypt(HexEncodingTextEncryptor.java:44)
+	at org.springframework.cloud.bootstrap.encrypt.AbstractEnvironmentDecrypt.decrypt(AbstractEnvironmentDecrypt.java:144)
+	... 20 common frames omitted
+Caused by: javax.crypto.BadPaddingException: Given final block not properly padded. Such issues can arise if a bad key is used during decryption.
+	at java.base/com.sun.crypto.provider.CipherCore.unpad(Unknown Source)
+	at java.base/com.sun.crypto.provider.CipherCore.fillOutputBuffer(Unknown Source)
+	at java.base/com.sun.crypto.provider.CipherCore.doFinal(Unknown Source)
+	at java.base/com.sun.crypto.provider.AESCipher.engineDoFinal(Unknown Source)
+	at java.base/javax.crypto.Cipher.doFinal(Unknown Source)
+	at org.springframework.security.crypto.encrypt.CipherUtils.doFinal(CipherUtils.java:135)
+	... 23 common frames omitted

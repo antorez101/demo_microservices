@@ -1,0 +1,22 @@
+2021-07-16 13:33:05 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.9 on DESKTOP-025I98Q with PID 15832 (C:\marko\workspaces\Event-Driven-microservices-Kakfka-Elastic\workspace-one\microservices-demo\twitter-to-kafka-service\target\classes started by antor in C:\marko\workspaces\Event-Driven-microservices-Kakfka-Elastic\workspace-one\microservices-demo)
+2021-07-16 13:33:05 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-07-16 13:33:06 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.03 seconds (JVM running for 1.595)
+2021-07-16 13:33:06 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Running app[Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-07-16 13:33:06 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2021-07-16 13:33:06 [main] INFO  c.m.d.t.t.k.s.r.i.StreamRunnerImpl - Started filtering twitter stream for keys [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-07-16 13:33:07 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Connection established.
+2021-07-16 13:33:07 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Receiving status stream.
+2021-07-16 13:33:07 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaListener - Twitter status with text RT @diorangxl: Saint Laurent Spring 2022 Menswear https://t.co/hIdQTQB8ui
+2021-07-16 13:33:10 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaListener - Twitter status with text when she went to PCB for spring break
+2021-07-16 13:33:11 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaListener - Twitter status with text doing 2 shaded + colored full bodies and a headshot for spring 2020!
+or taking rare items/diamonds
+#royalehigh #royalehighofferings #royalehighsellings #Royalehighcommissions #royalehighcommission #royalehighart #royalehighhalos https://t.co/GqDCPcsAc3
+2021-07-16 13:33:12 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaListener - Twitter status with text RT @aldreichd: «Painting a hint of spring»
+
+Happy Lunar New Year!
+
+I know everyone jokes about Albedo and his wip, but I think if he goes a…
+2021-07-16 13:33:13 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaListener - Twitter status with text RT @28sokak: Franz Kafka’nın da dediği gibi: “Şimdi bazı şeyleri suskunlukla geçiştireceğim...”
+2021-07-16 13:33:13 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaListener - Twitter status with text If you know me at all you know I love my grandpa and you know he is no spring chicken. I’m really excited he and I are going to get breakfast for my birthday on Sunday.
+2021-07-16 13:33:14 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaListener - Twitter status with text I really enjoyed illustrating this story for The New Yorker
+2021-07-16 13:33:14 [Twitter4J Async Dispatcher[0]] INFO  c.m.d.t.t.k.s.l.TwitterKafkaListener - Twitter status with text Its call playing with heart... If you might notice the poll 😶. I wanna badly choose louder than bobs and my heart go for paradise than I can't leave spring day and young forever is playing in my brain 😶.

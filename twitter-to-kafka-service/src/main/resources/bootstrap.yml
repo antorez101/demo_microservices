@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: twitter-to-kafka-service
+  profiles:
+    active: twitter_to_kafka
+  cloud:
+    config:
+      name: twitter-to-kafka-service,config-client
+      username: spring_cloud_user
+      password: '{cipher}97c3000cec17acd01ca6c2b292243ed4b8ec613bd964ccdd3cf29784a4486be45718e84abf7c8feff7fbf2c45a1dd5c8'
+      #springCloud_Pwd!
+encrypt:
+  key: 'Demo_Pwd!2020'

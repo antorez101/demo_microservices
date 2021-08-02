@@ -1,0 +1,20 @@
+2021-08-02 17:38:49 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2021-08-02 17:38:49 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2021-08-02 17:38:49 [main] INFO  c.m.demo.config.server.ConfigServer - No active profile set, falling back to default profiles: default
+2021-08-02 17:38:50 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=64ad351d-d90b-347b-9d37-35fccc79a4a3
+2021-08-02 17:38:50 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2021-08-02 17:38:50 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2021-08-02 17:38:50 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-08-02 17:38:50 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-08-02 17:38:51 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-08-02 17:38:51 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1252 ms
+2021-08-02 17:38:53 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/actuator/**'] with []
+2021-08-02 17:38:53 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/encrypt/**'] with []
+2021-08-02 17:38:53 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Ant [pattern='/decrypt/**'] with []
+2021-08-02 17:38:53 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4ab86b2a, org.springframework.security.web.context.SecurityContextPersistenceFilter@67784537, org.springframework.security.web.header.HeaderWriterFilter@608b906d, org.springframework.security.web.csrf.CsrfFilter@76b642aa, org.springframework.security.web.authentication.logout.LogoutFilter@5e7e7a7e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1dc9f5ad, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@484b5a21, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7793b55d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@54f69311, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@52290e63, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3e0855b0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2ac9e53c, org.springframework.security.web.session.SessionManagementFilter@7e1762e6, org.springframework.security.web.access.ExceptionTranslationFilter@29c80149, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@22002459]
+2021-08-02 17:38:54 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-08-02 17:38:54 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2021-08-02 17:38:54 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2021-08-02 17:38:54 [main] INFO  c.m.demo.config.server.ConfigServer - Started ConfigServer in 5.292 seconds (JVM running for 6.016)
+2021-08-02 17:38:54 [main] INFO  o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-08-02 17:38:54 [main] INFO  o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
